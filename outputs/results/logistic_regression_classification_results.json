@@ -1,0 +1,205 @@
+{
+  "model": "logistic_regression",
+  "timestamp": "2026-04-18T22:38:09.107796",
+  "accuracy": 0.8595,
+  "macro_f1": 0.6084,
+  "weighted_f1": 0.8468,
+  "per_class": {
+    "bank_account": {
+      "precision": 0.7532,
+      "recall": 0.7692,
+      "f1-score": 0.7612,
+      "support": 377
+    },
+    "credit_card": {
+      "precision": 0.75,
+      "recall": 0.7188,
+      "f1-score": 0.734,
+      "support": 480
+    },
+    "credit_reporting": {
+      "precision": 0.8901,
+      "recall": 0.964,
+      "f1-score": 0.9255,
+      "support": 4938
+    },
+    "debt_collection": {
+      "precision": 0.7669,
+      "recall": 0.6737,
+      "f1-score": 0.7173,
+      "support": 806
+    },
+    "money_transfer": {
+      "precision": 0.8452,
+      "recall": 0.6396,
+      "f1-score": 0.7282,
+      "support": 222
+    },
+    "mortgage": {
+      "precision": 0.8703,
+      "recall": 0.8557,
+      "f1-score": 0.8629,
+      "support": 298
+    },
+    "other": {
+      "precision": 1.0,
+      "recall": 0.013,
+      "f1-score": 0.0256,
+      "support": 77
+    },
+    "personal_loan": {
+      "precision": 0.8333,
+      "recall": 0.1163,
+      "f1-score": 0.2041,
+      "support": 86
+    },
+    "student_loan": {
+      "precision": 0.8861,
+      "recall": 0.5785,
+      "f1-score": 0.7,
+      "support": 121
+    },
+    "vehicle_loan": {
+      "precision": 0.6522,
+      "recall": 0.3158,
+      "f1-score": 0.4255,
+      "support": 95
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "bank_account",
+      "credit_card",
+      "credit_reporting",
+      "debt_collection",
+      "money_transfer",
+      "mortgage",
+      "other",
+      "personal_loan",
+      "student_loan",
+      "vehicle_loan"
+    ],
+    "matrix": [
+      [
+        290,
+        38,
+        28,
+        3,
+        16,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        16,
+        345,
+        102,
+        8,
+        7,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        10,
+        31,
+        4760,
+        108,
+        1,
+        19,
+        0,
+        0,
+        6,
+        3
+      ],
+      [
+        3,
+        12,
+        240,
+        543,
+        0,
+        2,
+        0,
+        0,
+        2,
+        4
+      ],
+      [
+        53,
+        13,
+        13,
+        0,
+        142,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        2,
+        30,
+        6,
+        0,
+        255,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        56,
+        14,
+        1,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        13,
+        32,
+        11,
+        1,
+        7,
+        0,
+        10,
+        1,
+        6
+      ],
+      [
+        0,
+        0,
+        38,
+        9,
+        0,
+        4,
+        0,
+        0,
+        70,
+        0
+      ],
+      [
+        2,
+        5,
+        49,
+        6,
+        0,
+        1,
+        0,
+        2,
+        0,
+        30
+      ]
+    ]
+  }
+}

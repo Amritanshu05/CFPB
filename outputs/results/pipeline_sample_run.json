@@ -1,0 +1,15 @@
+[
+  {
+    "complaint_summary": "i was charged twice for the same transaction last week. the bank refuses to refund me even after i provided the receipts.",
+    "predicted_issue": "bank_account",
+    "similar_cases": [
+      "{$380.00} was fraudulently pulled from my bank account / / 2025, without my authorization, and for a...",
+      "visa card serviced by comenity charged me twice in the month of for payments- once for {$810.00} and..."
+    ],
+    "recommended_next_step": "Request more information from consumer",
+    "confidence": 0.3864,
+    "generation_mocked": true,
+    "needs_human_review": true,
+    "input_complaint": "I was charged twice for the same transaction last week. The bank refuses to refund me even after I provided the receipts."
+  }
+]

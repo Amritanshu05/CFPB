@@ -1,0 +1,257 @@
+{
+  "model": "pipeline_generation",
+  "timestamp": "2026-04-19T00:00:07.175318",
+  "num_samples": 30,
+  "schema_validity": 1.0,
+  "label_fidelity": 0.9,
+  "grounding_mean": 1.0,
+  "grounding_median": 1.0,
+  "confidence_mean": 0.8691,
+  "confidence_median": 0.9397,
+  "abstention_rate": 0.1333,
+  "mock_fraction": 1.0,
+  "notes": "Grounding is a token-overlap proxy, not a full faithfulness metric. In mock mode, summaries are deterministic and often near-verbatim; this inflates grounding relative to real LLM paraphrasing.",
+  "schema_issue_counts": {},
+  "per_example": [
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9288,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9791,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "money_transfer",
+      "predicted_issue": "money_transfer",
+      "confidence": 0.9245,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9698,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9387,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.8894,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "mortgage",
+      "predicted_issue": "mortgage",
+      "confidence": 0.8784,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9463,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9238,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9631,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "bank_account",
+      "predicted_issue": "bank_account",
+      "confidence": 0.5698,
+      "needs_human_review": true,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "mortgage",
+      "predicted_issue": "mortgage",
+      "confidence": 0.7441,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9732,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9429,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_card",
+      "predicted_issue": "bank_account",
+      "confidence": 0.5574,
+      "needs_human_review": true,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9211,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9408,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9539,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9715,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9793,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9643,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "student_loan",
+      "predicted_issue": "student_loan",
+      "confidence": 0.8809,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9566,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9629,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9191,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "personal_loan",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.6126,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_card",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.4066,
+      "needs_human_review": true,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9497,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "credit_reporting",
+      "predicted_issue": "credit_reporting",
+      "confidence": 0.9433,
+      "needs_human_review": false,
+      "grounding": 1.0,
+      "mocked": true
+    },
+    {
+      "gold_label": "bank_account",
+      "predicted_issue": "bank_account",
+      "confidence": 0.5821,
+      "needs_human_review": true,
+      "grounding": 1.0,
+      "mocked": true
+    }
+  ]
+}

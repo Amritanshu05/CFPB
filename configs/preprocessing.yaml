@@ -1,0 +1,59 @@
+# Preprocessing configuration
+
+# Chunked reading to handle the ~8GB CSV without loading full file into RAM
+chunk_size: 50000
+
+# Minimum length of the RAW narrative (characters). Rows shorter than this
+# are dropped in the chunk reader before any text cleaning.
+min_narrative_length: 50
+
+# Minimum length of the CLEANED narrative (characters). Applied after
+# XXXX-redaction stripping so rows that collapse to near-empty text
+# (e.g. "accounts" after redactions) are also filtered out.
+min_clean_narrative_length: 50
+
+# Maximum narrative length (characters) — clip extremely long texts
+max_narrative_length: 5000
+
+# Fraction of rows with a narrative to sample for the development sample
+# (rows that have a non-empty Consumer complaint narrative)
+sample_fraction: 0.05
+sample_max_rows: 50000
+random_seed: 42
+
+# Label columns used for classification targets
+label_columns:
+  primary: "product_clean"       # coarse product category
+  secondary: "issue_clean"       # issue label
+
+# Text column after preprocessing
+text_column: "narrative_clean"
+
+# Train / validation / test split ratios (must sum to 1.0)
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+
+# Product label consolidation map
+# Maps verbose CFPB product strings to short clean labels
+product_map:
+  "Credit reporting, credit repair services, or other personal consumer reports": "credit_reporting"
+  "Credit reporting or other personal consumer reports": "credit_reporting"
+  "Debt collection": "debt_collection"
+  "Mortgage": "mortgage"
+  "Credit card or prepaid card": "credit_card"
+  "Credit card": "credit_card"
+  "Prepaid card": "credit_card"
+  "Checking or savings account": "bank_account"
+  "Bank account or service": "bank_account"
+  "Student loan": "student_loan"
+  "Vehicle loan or lease": "vehicle_loan"
+  "Payday loan, title loan, or personal loan": "personal_loan"
+  "Payday loan, title loan, personal loan, or advance loan": "personal_loan"
+  "Consumer Loan": "personal_loan"
+  "Money transfer, virtual currency, or money service": "money_transfer"
+  "Money transfers": "money_transfer"
+  "Virtual currency": "money_transfer"
+  "Other financial service": "other"
+  "Other": "other"

@@ -1,0 +1,13 @@
+# All paths are relative to the project root
+# Override with environment-specific values in .env if needed
+
+data:
+  raw_csv: "data/raw/cfbp/consumer_complaints.csv"
+  processed_dir: "data/processed"
+  samples_dir: "data/samples"
+  indexes_dir: "data/indexes"
+
+outputs:
+  models_dir: "outputs/models"
+  results_dir: "outputs/results"
+  logs_dir: "outputs/logs"

@@ -1,0 +1,44 @@
+# Core data science
+pandas==2.2.2
+numpy==1.26.4
+pyarrow==16.1.0
+
+# NLP and ML
+scikit-learn==1.5.0
+scipy==1.13.1
+
+# Transformers
+torch==2.3.1
+transformers==4.41.2
+sentence-transformers==3.0.1
+datasets==2.20.0
+accelerate==0.31.0
+
+# Retrieval
+faiss-cpu==1.8.0
+rank-bm25==0.2.2
+
+# Evaluation
+rouge-score==0.1.2
+bert-score==0.3.13
+nltk==3.8.1
+
+# LLM API clients (optional, plug in your key)
+openai==1.35.3
+anthropic==0.28.0
+
+# Experiment tracking
+tqdm==4.66.4
+
+# Config management
+pyyaml==6.0.1
+python-dotenv==1.0.1
+
+# Visualization / notebooks
+matplotlib==3.9.0
+seaborn==0.13.2
+jupyter==1.0.0
+ipykernel==6.29.4
+
+# Demo (optional)
+gradio==4.37.2

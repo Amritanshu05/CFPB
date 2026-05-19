@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Data (raw is too large; processed and samples are tracked selectively)
+data/raw/
+data/indexes/
+!data/processed/.gitkeep
+!data/samples/.gitkeep
+
+# Model weights
+outputs/models/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+outputs/logs/
+*.log
+
+
+PAPER_PREP.md
+CFBP_first_thoughts.txt
+CFBP_initial_research.txt

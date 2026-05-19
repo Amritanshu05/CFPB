@@ -1,0 +1,11 @@
+,bank_account,credit_card,credit_reporting,debt_collection,money_transfer,mortgage,other,personal_loan,student_loan,vehicle_loan
+bank_account,248,85,39,5,0,0,0,0,0,0
+credit_card,11,337,113,19,0,0,0,0,0,0
+credit_reporting,5,92,4683,144,0,14,0,0,0,0
+debt_collection,1,16,282,506,0,1,0,0,0,0
+money_transfer,78,47,9,10,78,0,0,0,0,0
+mortgage,2,38,28,23,0,207,0,0,0,0
+other,1,6,52,15,0,3,0,0,0,0
+personal_loan,1,36,20,26,0,3,0,0,0,0
+student_loan,0,38,35,28,0,16,0,0,4,0
+vehicle_loan,1,30,33,28,0,2,0,0,0,1

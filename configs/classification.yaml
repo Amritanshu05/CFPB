@@ -1,0 +1,39 @@
+# Classification model configuration
+
+target_column: "product_clean"
+text_column: "narrative_clean"
+
+tfidf:
+  max_features: 50000
+  ngram_range: [1, 2]
+  sublinear_tf: true
+  min_df: 2
+
+logistic_regression:
+  C: 1.0
+  max_iter: 1000
+  solver: "lbfgs"
+  multi_class: "auto"
+
+svm:
+  C: 1.0
+  kernel: "linear"
+  max_iter: 5000
+
+naive_bayes:
+  alpha: 1.0
+
+transformer:
+  model_name: "distilbert-base-uncased"
+  # max_length and batch_size are tuned for a 4 GB RTX 3050 Laptop GPU.
+  # If you have more VRAM, raise batch_size to 16/32 and max_length to 256.
+  max_length: 192
+  batch_size: 8
+  eval_batch_size: 16
+  learning_rate: 2.0e-5
+  num_epochs: 3
+  warmup_steps: 100
+  weight_decay: 0.01
+  # Subsample the training set if you want a faster smoke-training run.
+  # Set to null (default) to use all rows from train.parquet.
+  max_train_samples: null
