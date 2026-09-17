@@ -151,7 +151,7 @@ python scripts/train_classifier.py --model transformer    # DistilBERT on GPU
 python scripts/run_pipeline.py --complaint "I was charged twice for the same transaction and the bank refuses to refund me."
 
 # 5. Evaluate everything
-python scripts/evaluate.py --task all
+python scripts/evaluate.py --task all --n-gen-samples 30
 ```
 
 All artifacts end up under `data/processed/`, `data/indexes/`,
@@ -195,6 +195,3 @@ Designed to be compared against:
 - Retrieval-only systems (BM25, dense) — **implemented**
 - Hybrid retrieval (RRF) — **implemented**
 - RAG-augmented LLM (OpenAI / Anthropic) — **implemented, requires API key**
-
-See `CFBP_first_thoughts.txt` and `CFBP_initial_research.txt` for the
-full research design.
